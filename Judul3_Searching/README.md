@@ -1,3 +1,5 @@
+Tugas Akhir Percobaan 3
+
 Judul Program : Program Pencari Nilai dan Pemiliknya
 
 Program berisi tentang algoritma Sequential Searching untuk mencari banyaknya nilai dan siapa saja pemiliknya 
