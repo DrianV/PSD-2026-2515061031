@@ -32,4 +32,5 @@ Source  Code:
 26. Menampilkan pesan berapa kali nilai tersebut ditemukan.
 27. Menampilkan daftar nama pemilik nilai. ' , '.join(list_pemilik) berfungsi menggabungkan list nama menjadi satu kalimat yang rapi dipisahkan koma.
 28-29. Jika count adalah 0, tampilkan pesan bahwa nilai tidak ada di dalam data.
+    
 31-32. Blok except yang akan berjalan jika user salah memasukkan tipe data (misal input huruf saat diminta angka), sehingga program tidak langsung mati (force close).
