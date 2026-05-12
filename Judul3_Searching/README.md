@@ -25,12 +25,15 @@ Source  Code:
 16. Memulai perulangan for sebanyak jumlah mahasiswa yang sudah ditentukan.
 17. Meminta input nama mahasiswa. Format {i+1} digunakan agar tampilan di layar mulai dari angka 1 (bukan 0).
 18. Meminta input nilai mahasiswa dan mengubahnya menjadi float
+
 19-20. Menambahkan (push) data nama dan nilai yang baru saja diinput ke dalam list masing-masing.
+
 22. Meminta user memasukkan nilai yang ingin dicari frekuensi kemunculannya.
 23. Memanggil fungsi sequential_search. Hasil kembaliannya langsung dipecah (unpacking) ke dalam variabel count dan list_pemilik.
 25. Mengecek apakah count lebih besar dari 0 (artinya data ditemukan).
 26. Menampilkan pesan berapa kali nilai tersebut ditemukan.
 27. Menampilkan daftar nama pemilik nilai. ' , '.join(list_pemilik) berfungsi menggabungkan list nama menjadi satu kalimat yang rapi dipisahkan koma.
+
 28-29. Jika count adalah 0, tampilkan pesan bahwa nilai tidak ada di dalam data.
     
 31-32. Blok except yang akan berjalan jika user salah memasukkan tipe data (misal input huruf saat diminta angka), sehingga program tidak langsung mati (force close).
