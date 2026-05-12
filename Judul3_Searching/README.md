@@ -38,3 +38,5 @@ Source  Code:
 28-29. Jika count adalah 0, tampilkan pesan bahwa nilai tidak ada di dalam data.
     
 31-32. Blok except yang akan berjalan jika user salah memasukkan tipe data (misal input huruf saat diminta angka), sehingga program tidak langsung mati (force close).
+
+Link : https://youtu.be/kzk5dQDpfHo
