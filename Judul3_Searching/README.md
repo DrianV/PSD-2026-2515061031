@@ -1,5 +1,3 @@
-<img width="1726" height="1622" alt="code" src="https://github.com/user-attachments/assets/796d7d84-3d77-46fc-bdb9-8471a1756f42" />Tugas Akhir Percobaan 3
-
 Judul Program : Program Pencari Nilai dan Pemiliknya
 
 Program berisi tentang algoritma Sequential Searching untuk mencari banyaknya nilai dan siapa saja pemiliknya 
