@@ -29,7 +29,8 @@ Source  Code:
 19-20. Menambahkan (push) data nama dan nilai yang baru saja diinput ke dalam list masing-masing.
 
 22. Meminta user memasukkan nilai yang ingin dicari frekuensi kemunculannya.
-23. Memanggil fungsi sequential_search. Hasil kembaliannya langsung dipecah (unpacking) ke dalam variabel count dan list_pemilik.
+ 
+24. Memanggil fungsi sequential_search. Hasil kembaliannya langsung dipecah (unpacking) ke dalam variabel count dan list_pemilik.
 25. Mengecek apakah count lebih besar dari 0 (artinya data ditemukan).
 26. Menampilkan pesan berapa kali nilai tersebut ditemukan.
 27. Menampilkan daftar nama pemilik nilai. ' , '.join(list_pemilik) berfungsi menggabungkan list nama menjadi satu kalimat yang rapi dipisahkan koma.
