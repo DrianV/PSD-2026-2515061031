@@ -1,97 +1,102 @@
-Tugas Akhir Percobaan 4
+Tugas Akhir Percobaan 5
 
-Judul Program : Program Antrian Pijat Panggilan
+Judul Program : Program Binary Search Tree Dasar
 
-Program Berisi Tentang Algoritma Queue Terapis Pijat Panggilan
+Program Berisi Tentang Dasar Penambahan Dan Pengurutan BST
 
 Source Code: 
 <img width="1494" height="2306" alt="code" src="https://github.com/user-attachments/assets/cf335019-cf21-4aa1-8e73-e522d2edfd22" />
 
-Line 1 : Bikin cetakan bernama Node buat jadi tempat angka.
+Line 1 : Mendefinisikan kelas bernama Node untuk membuat struktur simpul pohon.
 
-Line 2 : Fungsi bawaan buat nyiapin tempat baru setiap kali kita masukin angka.
+Line 2 : Membuat fungsi konstruktor (__init__) kelas Node yang menerima parameter key.
 
-Line 3 : Nyiapin anak kiri root, awalnya masih kosong (None).
+Line 3 : Menyiapkan variabel self.left bernilai None untuk menyimpan cabang anak sebelah kiri.
 
-Line 4 : Nyiapin akan kanan root, awalnya juga masih kosong (None).
+Line 4 : Menyiapkan variabel self.right bernilai None untuk menyimpan cabang anak sebelah kanan.
 
-Line 5 : Nyimpen angka yang kita masukin ke dalam tempat angka itu (self.val).
+Line 5 : Menyimpan nilai dari parameter key ke dalam atribut objek bernama self.val.
 
-Line 6 : Bikin fungsi bernama insert buat nambahin angka baru ke dalam pohon.
+Line 7 : Mendefinisikan fungsi insert dengan parameter root dan key untuk memasukkan data baru ke pohon.
 
-Line 7 : Ngecek, kalau posisi yang mau diincar ternyata masih kosong .
+Line 8 : Mengecek kondisi apakah posisi node pohon saat ini masih kosong (None).
 
-Line 8 : Karena kosong, langsung bikin kotak Node baru di situ dan selesai.
+Line 9 : Membuat dan mengembalikan objek Node baru jika kondisi baris 8 terpenuhi.
 
-Line 9 : Ngecek, kalau angka baru ternyata lebih kecil dari angka di kotak sekarang.
+Line 10 : Mengecek apakah nilai key baru lebih kecil daripada nilai node saat ini (root.val).
 
-Line 10 : Suruh fungsi insert nyari tempat kosong lagi ke arah sebelah kiri.
+Line 11 : Memanggil fungsi insert secara rekursif untuk menaruh data di cabang sebelah kiri (root.left).
 
-Line 11 : Ngecek, kalau angka baru ternyata lebih besar dari angka di kotak sekarang.
+Line 12 : Mengecek apakah nilai key baru lebih besar daripada nilai node saat ini (root.val).
 
-Line 12 : Suruh fungsi insert nyari tempat kosong lagi ke arah sebelah kanan.
+Line 13 : Memanggil fungsi insert secara rekursif untuk menaruh data di cabang sebelah kanan (root.right).
 
-Line 13 : Balikin struktur pohon yang posisinya udah rapi diperbarui.
+Line 14 : Mengembalikan objek root pohon yang strukturnya sudah diperbarui.
 
-Line 14 : Bikin fungsi inorder buat nampilin angka dari yang paling kecil ke terbesar.
+Line 16 : Mendefinisikan fungsi inorder dengan parameter root untuk menelusuri pohon secara berurutan.
 
-Line 15 : Pastiin dulu kalau kotak yang lagi dilihat sekarang ada isinya, bukan kosong.
+Line 17 : Mengecek apakah objek root saat ini ada (tidak bernilai None).
 
-Line 16 : Suruh program jalan duluan ke cabang paling kiri buat nyari angka terkecil.
+Line 18 : Memanggil fungsi inorder secara rekursif untuk memeriksa seluruh cabang bagian kiri.
 
-Line 17 : Cetak angka di kotak sekarang ke layar, terus kasih spasi di ujungnya biar ga dempet.
+Line 19 : Mencetak nilai node (root.val) secara horizontal ke samping dengan pemisah spasi (end=" ").
 
-Line 18 : Baru deh jalan ke cabang sebelah kanan buat liat angka yang lebih besar.
+Line 20 : Memanggil fungsi inorder secara rekursif untuk memeriksa seluruh cabang bagian kanan.
 
-Line 19 : Bikin fungsi main sebagai otak atau jalur utama jalannya program.
+Line 22 : Mendefinisikan fungsi utama bernama main sebagai pusat kendali jalannya program.
 
-Line 20 : nampilin tulisan judul program di layar.
+Line 23 : Mencetak teks judul atau header utama program ke layar terminal.
 
-Line 21 : Perulangan terus-menerus sampai user masukin Root (angka pertama) dengan benar.
+Line 24 : Memulai perulangan while tanpa henti untuk meminta input awal pembuatan akar pohon (root).
 
-Line 22 : sistem keamanan (try) biar program ga langsung error kalau user salah ketik.
+Line 25 : Membuka blok try untuk mengantisipasi error jika pengguna salah memasukkan tipe data.
 
-Line 23 : Munculin teks perintah dan ambil ketikan user buat angka pertama.
+Line 26 : Meminta input dari pengguna untuk nilai awal root pohon dan disimpan di variabel root_input.
 
-Line 24 : Ubah ketikan user jadi angka bulat, terus jadiin itu sebagai akar utama (root).
+Line 27 : Mengonversi input teks menjadi angka bulat (int) lalu membungkusnya menjadi objek Node utama.
 
-Line 25 : Stop perulangan bikin root karena angkanya udah bener dan sukses dibuat.
+Line 28 : Keluar dari perulangan while pertama menggunakan perintah break karena input root sudah sukses.
 
-Line 26 : Bagian yang nangkep basah (except) kalau user malah ngetik huruf atau simbol.
+Line 29 : Menangkap kesalahan jenis data (ValueError) jika pengguna memasukkan teks non-angka pada baris 26.
 
-Line 27 : Ngomelin user lewat layar kalau inputnya salah dan wajib angka bulat.
+Line 30 : Mencetak pesan peringatan agar pengguna hanya memasukkan angka bulat saja.
 
-Line 28 : Kasih tau user kalau Root-nya udah berhasil dibuat.
+Line 32 : Mencetak notifikasi menggunakan f-string bahwa root pohon berhasil dibuat beserta nilainya.
 
-Line 29 : Cetak petunjuk cara masukin angka selanjutnya atau cara kalau mau udahan.
+Line 33 : Mencetak instruksi langkah selanjutnya untuk menambah angka atau mengetik 'selesai'.
 
-Line 30 : Bikin perulangan lagi buat nerima angka-angka baru berikutnya.
+Line 34 : Baris kosong untuk memberikan jarak visual pada output terminal.
 
-Line 31 : Ambil ketikan user (bisa angka baru atau ketikan kata 'selesai').
+Line 35 : Memulai perulangan while tanpa henti kedua khusus untuk menerima angka-angka baru berikutnya.
 
-Line 32 : Bersihin spasi liar dan ubah jadi huruf kecil semua buat ngecek kata 'selesai'.
+Line 36 : Meminta pengguna menginput angka baru atau kata kunci selesai, lalu disimpan di variabel pilihan.
 
-Line 33 : Kalau user ngetik 'selesai', stop perulangan input angka baru.
+Line 37 : Mengecek apakah input (setelah dihapus spasi ujungnya dan diubah ke huruf kecil) adalah kata 'selesai'.
 
-Line 34 : Siapin sistem keamanan (try) kedua khusus buat jagain input angka baru.
+Line 38 : Menghentikan perulangan input angka baru menggunakan break jika kondisi baris 37 benar.
 
-Line 35 : Coba ubah ketikan user tadi menjadi angka bulat.
+Line 39 : Membuka blok try kedua untuk memvalidasi angka baru yang dimasukkan.
 
-Line 36 : Panggil fungsi insert buat nyelipin angka baru itu ke dalam pohon.
+Line 40 : Mengonversi teks input dari variabel pilihan menjadi tipe data angka bulat (int).
 
-Line 37 : Cetak info di layar kalau angkanya udah sukses masuk ke pohon.
+Line 41 : Memanggil fungsi insert untuk memposisikan angka baru tersebut ke dalam struktur pohon.
 
-Line 38 : Tangkap error kalau user ngetik yang aneh-aneh (bukan angka dan bukan kata selesai).
+Line 42 : Mencetak pesan sukses ke terminal bahwa angka baru berhasil ditambahkan ke pohon.
 
-Line 39 : Kasih peringatan kalau inputnya salah ketik.
+Line 43 : Menangkap kesalahan ValueError jika pengguna menginput teks acak yang bukan angka maupun kata 'selesai'.
 
-Line 40 : Bikin garis pembatas atas biar tampilan hasilnya rapi.
+Line 44 : Mencetak pesan peringatan bahwa input yang dimasukkan salah atau tidak valid.
 
-Line 41 : Cetak tulisan judul buat hasil akhir.
+Line 46 : Mencetak garis pembatas hiasan putus-putus pembuka hasil akhir.
 
-Line 42 : Manggil fungsi inorder buat nyetak semua angka dari yang terkecil sampai terbesar.
+Line 47 : Mencetak teks informasi bahwa data di bawahnya adalah hasil akhir yang berurutan.
 
-Link Video : 
-Line 43 : Bikin garis pembatas penutup di bagian bawah.
-Line 44 : Cetak kalimat penutup kalau programnya udah kelar semua.
-Line 45 : Manggil fungsi main() di paling bawah biar semua kode di atas langsung jalan saat di-run.
+Line 48 : Memanggil fungsi inorder(root) untuk mencetak isi pohon dari angka terkecil ke terbesar.
+
+Line 49 : Mencetak garis pembatas hiasan putus-putus penutup hasil akhir.
+
+Line 50 : Mencetak kalimat penutup tanda program telah selesai dijalankan seluruhnya.
+
+Line 52 : Memanggil fungsi main() untuk memicu seluruh kode di atas agar langsung berjalan saat file dieksekusi.
+
+Link Video : https://youtu.be/3qkEpyKemMY
