@@ -5,7 +5,8 @@ Judul Program : Program Binary Search Tree Dasar
 Program Berisi Tentang Dasar Penambahan Dan Pengurutan BST
 
 Source Code: 
-<img width="1494" height="2306" alt="code" src="https://github.com/user-attachments/assets/cf335019-cf21-4aa1-8e73-e522d2edfd22" />
+<img width="1494" height="2268" alt="code" src="https://github.com/user-attachments/assets/6d2b5ef3-d1f0-4d7b-a794-50c9c9b80799" />
+
 
 Line 1 : Mendefinisikan kelas bernama Node untuk membuat struktur simpul pohon.
 
